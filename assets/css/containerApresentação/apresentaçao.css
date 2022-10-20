@@ -58,6 +58,18 @@
     }
 }
 
+@media screen and (max-width:414px) {
+   
+    .apresentação__imagem {
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
 
 @media screen and (max-width:320px) {
     .apresentação__conteudo {
