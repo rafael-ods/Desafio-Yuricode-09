@@ -1,0 +1,64 @@
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sobre-mim__titulo {
+    color: var(--cor-branca);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 30px;
+    
+}
+
+.sobre-mim__descrição {
+    color: var(--cor-cinza);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 85px;
+    max-width: 745px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 425px) {
+    .sobre-mim__titulo {
+        margin-bottom: 15px;
+    }
+   
+    .sobre-mim__descrição {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+   
+}
+
+@media screen and (max-width: 390px) {
+    .sobre-mim__titulo {
+        margin-bottom: 4px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .sobre-mim__titulo {
+        margin-bottom: 5px;
+    }
+
+    .sobre-mim__descrição {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 375px) {
+
+    .sobre-mim__descrição {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,114 @@
+.servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.servicos__titulo {
+    color: var(--cor-branca);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 30px;
+}
+
+.container__servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+.card__servicos {
+    background-color: var(--cor-preto-claro);
+    border: 1px solid var(--cor-cinza-escuro);
+    border-bottom: 5px solid var(--cor-verde);
+    width: 350px;
+    height: 240px;
+}
+
+.card__servicos:hover {
+    border: 1px solid var(--cor-verde);
+    border-bottom: 5px solid var(--cor-verde);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.img--code::before {
+    content: "";
+    background-image: url(../../img/code.png);
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    margin: 30px 0 40px 30px;
+}
+
+.img--ui::before {
+    content: "";
+    background-image: url(../../img/figma.png);
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    margin: 30px 0 40px 30px;
+}
+.img--site::before {
+    content: "";
+    background-image: url(../../img/smartphone.png);
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    margin: 30px 0 40px 30px;
+}
+
+.servico__descricação {
+    color: var(--cor-cinza);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 126px 0 0 30px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .servicos {
+        padding: 30px 0;
+        height: auto;
+    }
+    .container__servicos {
+        justify-content: center;
+    }
+}
+@media screen and (max-width:768px) {
+    .servicos {
+        padding: 9px 0
+    }
+    .container__servicos {
+        gap: 12px;
+    }
+
+}
+
+@media screen and (max-width:393px) {
+    .servicos__titulo {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .servicos__titulo {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .card__servicos {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .card__servicos {
+        width: 260px;
+    }
+}

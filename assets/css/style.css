@@ -1,0 +1,35 @@
+@import url("../css/cabecalho/cabecalho.css");
+@import url("../css/navbar/navbar.css");
+@import url("../css/main/container.css");
+@import url(../css/containerApresentação/apresentaçao.css);
+@import url(../css/sobreMim/sobreMim.css);
+@import url("../css/redes/redes.css");
+@import url(../css/projetos/projetos.css);
+@import url(../css/servicos/servicos.css);
+@import url(../css/skill/skill.css);
+@import url(../css/rodape/rodape.css);
+
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+
+:root {
+    --cor-verde: #00DF5E;
+    --cor-branca: #F9F9F9;
+    --cor-cinza: #828282;
+    --cor-cinza-escuro: #333333;
+    --cor-preto: #171717;
+    --cor-preto-claro: #212121;
+    --fonte-principal: 'DM Sans', 'icones', sans-serif;
+
+}
+
+
+body {
+    background-color: var(--cor-preto);
+    font-family: var(--fonte-principal);
+    overflow-x: hidden;
+
+}

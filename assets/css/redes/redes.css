@@ -1,0 +1,99 @@
+.redes {
+    width: 100%;
+}
+
+.redes__lista {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    background-color: var(--cor-preto-claro);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle:hover {
+    transform: scale(1.05);
+    border: 1px solid var(--cor-verde);
+}
+
+.redes__titulo {
+    color: var(--cor-branca);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 19px 0 5px 0;
+}
+
+.redes__descrição {
+    color: var(--cor-cinza);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.link--smile::before {
+    content: "";
+    background-image: url(../../img/smile.png);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    height: 32px;
+    width: 32px;
+}
+
+
+.link--email::before {
+    content: "";
+    background-image: url(../../img/mail.png);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    height: 32px;
+    width: 32px;
+}
+
+.link--instagram::before {
+    content: "";
+    background-image: url(../../img/instagram.png);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    height: 32px;
+    width: 32px;
+}
+
+.link--telefone::before {
+    content: "";
+    background-image: url(../../img/phone.png);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    height: 32px;
+    width: 32px;
+}
+
+
+@media screen and (max-width:425px) {
+   
+     .redes__lista {
+        flex-direction: column;
+    } 
+    
+    .circle {
+        margin-top: 5px;
+    }
+
+    .redes__titulo { 
+        margin: 5px 0;
+    }
+}

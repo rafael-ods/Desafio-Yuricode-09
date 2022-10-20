@@ -1,0 +1,111 @@
+.skill__titulo {
+    color: var(--cor-branca);
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 127px;
+}
+
+
+.container__skill {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 51px;
+}
+
+
+.card__skill {
+    background-color: var(--cor-preto-claro);
+    border: 1px solid var(--cor-cinza-escuro);
+    width: 148px;
+    height: 150px;
+}
+
+.card__skill:hover {
+    border: 1px solid var(--cor-verde);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.img--html {
+    background-image: url(../../img/icomoon-free_html-five.png);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 35px 35px;
+}
+
+.img--css {
+    background-image: url(../../img/fontisto_css3.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 35px 35px;
+}
+
+.img--js {
+    background-image: url(../../img/akar-icons_javascript-fill.png);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 35px 35px;
+}
+
+.img--tailwind {
+    background-image: url(../../img/file-icons_tailwind.png);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 35px 35px;
+}
+
+.img--react {
+    background-image: url(../../img/akar-icons_react-fill.png);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 35px 35px;
+}
+
+.img--next {
+    background-image: url(../../img/logos_nextjs.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 35px 35px;
+}
+
+@media screen and (max-width:1024px) {
+
+    .container__skill {
+        justify-content: center;
+    }
+
+    .card__skill {
+        width: 100px;
+        height: 100px;
+    }
+
+    .img--html,
+    .img--css,
+    .img--js,
+    .img--tailwind,
+    .img--react,
+    .img--next {
+        height: 40px;
+        width: 40px;
+        background-position: center;
+        background-size: contain;
+        margin: 30px 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container__skill {
+        margin-bottom: 15px;
+    }
+}
+
+

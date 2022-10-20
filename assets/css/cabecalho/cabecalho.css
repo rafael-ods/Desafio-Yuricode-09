@@ -1,0 +1,68 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 20px;
+    
+
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+.cabecalho__logo {
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+
+.cabecalho__menu {
+    background-color: var(--cor-branca);
+    border: none;
+}
+
+.cabecalho__menu {
+    display: none;
+}
+
+
+
+.menu__hamburguer {
+    background-image: url(../../img/bars-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-position-y: 2px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+@media screen and (max-width:1024px) {
+    .cabecalho {
+        padding: 25px 40px;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .cabecalho {
+        flex-direction: row-reverse;
+        
+    }
+    .cabecalho__menu {
+        display: block; 
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .cabecalho {
+        padding: 20px;
+    }
+
+}
